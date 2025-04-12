@@ -1,0 +1,463 @@
+/* Header */
+header {
+    position: relative;
+    padding: 40px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Title centered */
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  #dark-mode-toggle {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  
+  /* Toggle button */
+  #menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Menu links container (dropdown) */
+  #menu-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  /* Menu items */
+  #menu-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+  
+  #menu-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Show menu when toggled */
+  #menu-links.show {
+    display: block;
+  }
+  /* Profile picture container */
+#profile-picture {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Profile image styling */
+  #profile-picture img {
+    width: 150px;              /* Adjust size as needed */
+    height: 150px;
+    object-fit: cover;         /* Ensures image stays contained */
+    border-radius: 50%;        /* Makes it circular */
+    border: 3px solid white;   /* Optional border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  }
+  #greeting-container {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+  }
+  
+  #greeting {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #clock {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  /* Bio section */
+#bio {
+    background-color:rgba(255, 255, 255, 0.1);
+    
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Bio section title */
+  #bio h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(255, 253, 253);
+  }
+  
+  /* Bio paragraph */
+  #bio p {
+    color: white;
+    line-height: 1.6;
+    font-size: 1em;
+  }
+  
+/* Education Section */
+#education {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  
+  #education h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+  }
+  
+  .education-item h3 {
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .education-item p {
+    color: #e0e0e0;
+    margin: 4px 0;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  
+  #skills h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  #skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  #skills li {
+    color: white;
+    margin-bottom: 8px;
+  }
+  
+  /* Competitive Programming Section */
+  #cp-profiles {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 30px 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  #cp-profiles h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  #cp-profiles a {
+    margin: 0 10px;
+  }
+  
+  #cp-profiles button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s;
+  }
+  
+  #cp-profiles button:hover {
+    background-color: #444;
+  }
+  
+  /* Git Section */
+  #Git {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  #Git h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  #Git button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Git button:hover {
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    #menu-links {
+      top: 60px;
+      right: 10px;
+    }
+  
+    #profile-picture img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    #skills ul {
+      padding-left: 15px;
+    }
+  
+    .education-item {
+      font-size: 0.95em;
+    }
+  
+    #cp-profiles button,
+    #Git button {
+      padding: 8px 14px;
+      font-size: 0.9em;
+    }
+  }
+  
+  body.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  body.light-mode header,
+  body.light-mode #bio,
+  body.light-mode #education,
+  body.light-mode #skills,
+  body.light-mode #cp-profiles,
+  body.light-mode #Git {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+  }
+  
+  body.light-mode #menu-links a,
+  body.light-mode #bio p,
+  body.light-mode .education-item p,
+  body.light-mode .education-item h3,
+  body.light-mode #skills li {
+    color: #111;
+  }
+  
+  body.light-mode #cp-profiles button,
+  body.light-mode #Git button {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  body.light-mode #cp-profiles button:hover,
+  body.light-mode #Git button:hover {
+    background-color: #aaa;
+  }
+  
+
+
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+    animation-name: fall;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  #effect-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #effect-controls button {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .light-mode #effect-controls button {
+    color: #000;
+  }
+    
+  body.snow-disabled .snowflake {
+    display: none !important;
+  }
+  .gallery-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .lightbox.hidden {
+    display: none;
+  }
+  
+  #lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .rating-container {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  }
+  
+  .stars {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .stars .star:hover,
+  .stars .star.hovered,
+  .stars .star.selected {
+    color: gold;
+    transition: color 0.3s;
+  }
+  
+  #rating-text {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #eee;
+  }
+  
+  .emoji {
+    font-size: 2rem;
+    animation: pop 0.4s ease;
+  }
+  
+  @keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+    
